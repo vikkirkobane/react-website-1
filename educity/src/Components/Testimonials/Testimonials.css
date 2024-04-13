@@ -8,10 +8,12 @@
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  padding: 50px;
+  padding: 30px;
   border-radius: 50%;
   cursor: pointer;
   background: #212EA0;
+  width: 10%;
+  
 }
 .back-btn{
   right: auto;
@@ -53,4 +55,39 @@
 }
 .user-info h3{
   color: #212EA0;
+}
+
+/**** media query ****/
+@media screen and (max-width: 850px){
+  .testimonials{
+    padding: 0 40px;
+  }
+  .next-btn, .back-btn{
+    padding: 10px;
+    width: 35px;   
+  }
+  .testimonials ul li{
+    padding: 10px;
+  }
+  .slide{
+    padding: 10px;
+  }
+  .slide img{
+    width: 50px;
+    border: 3px solid #212EA0;
+  }
+}
+@media screen and (max-width: 650px){
+  .user-info{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    
+  }
+  .user-info h3{
+    font-size: 16px;
+  }
+  .slider p{
+    font-size: 12px;
+  }
 }
